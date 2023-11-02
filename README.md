@@ -45,19 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/iter-incrspace
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterIncrspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-incrspace@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-incrspace/tags). For example,
-
-```javascript
-import iterIncrspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-incrspace@v0.1.1-deno/mod.js';
+var iterIncrspace = require( '@stdlib/iter-incrspace' );
 ```
 
 #### iterIncrspace( start, stop\[, increment] )
@@ -133,8 +144,8 @@ var bool = it.next().done;
     If you desire more control over value precision, consider using [roundn][@stdlib/math/base/special/roundn]:
 
     ```javascript
-    import roundn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-roundn@deno/mod.js';
-    import iterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-map@deno/mod.js';
+    var roundn = require( '@stdlib/math-base-special-roundn' );
+    var iterMap = require( '@stdlib/iter-map' );
 
     function round( v ) {
         return roundn( v, -2 );
@@ -172,7 +183,7 @@ var bool = it.next().done;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import iterIncrspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-incrspace@deno/mod.js';
+var iterIncrspace = require( '@stdlib/iter-incrspace' );
 
 // Create an iterator which is subject to floating-point rounding errors:
 var it = iterIncrspace( 0.0, 1.01, 0.02 );
@@ -228,7 +239,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -258,8 +269,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/iter-incrspace.svg
 [npm-url]: https://npmjs.org/package/@stdlib/iter-incrspace
 
-[test-image]: https://github.com/stdlib-js/iter-incrspace/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/iter-incrspace/actions/workflows/test.yml?query=branch:v0.1.1
+[test-image]: https://github.com/stdlib-js/iter-incrspace/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/iter-incrspace/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-incrspace/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-incrspace?branch=main
@@ -288,21 +299,21 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/iter-incrspace/main/LICENSE
 
-[@stdlib/math/base/special/roundn]: https://github.com/stdlib-js/math-base-special-roundn/tree/deno
+[@stdlib/math/base/special/roundn]: https://github.com/stdlib-js/math-base-special-roundn
 
 <!-- <related-links> -->
 
-[@stdlib/array/from-iterator]: https://github.com/stdlib-js/array-from-iterator/tree/deno
+[@stdlib/array/from-iterator]: https://github.com/stdlib-js/array-from-iterator
 
-[@stdlib/iter/datespace]: https://github.com/stdlib-js/iter-datespace/tree/deno
+[@stdlib/iter/datespace]: https://github.com/stdlib-js/iter-datespace
 
-[@stdlib/iter/linspace]: https://github.com/stdlib-js/iter-linspace/tree/deno
+[@stdlib/iter/linspace]: https://github.com/stdlib-js/iter-linspace
 
-[@stdlib/iter/logspace]: https://github.com/stdlib-js/iter-logspace/tree/deno
+[@stdlib/iter/logspace]: https://github.com/stdlib-js/iter-logspace
 
-[@stdlib/iter/step]: https://github.com/stdlib-js/iter-step/tree/deno
+[@stdlib/iter/step]: https://github.com/stdlib-js/iter-step
 
-[@stdlib/iter/unitspace]: https://github.com/stdlib-js/iter-unitspace/tree/deno
+[@stdlib/iter/unitspace]: https://github.com/stdlib-js/iter-unitspace
 
 <!-- </related-links> -->
 
