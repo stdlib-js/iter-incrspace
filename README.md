@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterIncrspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-incrspace@esm/index.mjs';
+import iterIncrspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-incrspace@v0.2.2-esm/index.mjs';
 ```
 
 #### iterIncrspace( start, stop\[, increment] )
@@ -172,7 +172,7 @@ var bool = it.next().done;
 <body>
 <script type="module">
 
-import iterIncrspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-incrspace@esm/index.mjs';
+import iterIncrspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-incrspace@v0.2.2-esm/index.mjs';
 
 // Create an iterator which is subject to floating-point rounding errors:
 var it = iterIncrspace( 0.0, 1.01, 0.02 );
