@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterIncrspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-incrspace@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-incrspace/tags). For example,
+
+```javascript
 import iterIncrspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-incrspace@v0.2.3-esm/index.mjs';
 ```
 
@@ -172,7 +177,7 @@ var bool = it.next().done;
 <body>
 <script type="module">
 
-import iterIncrspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-incrspace@v0.2.3-esm/index.mjs';
+import iterIncrspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-incrspace@esm/index.mjs';
 
 // Create an iterator which is subject to floating-point rounding errors:
 var it = iterIncrspace( 0.0, 1.01, 0.02 );
