@@ -1,5 +1,0 @@
-"use strict";var y=function(e,r){return function(){try{return r||e((r={exports:{}}).exports,r),r.exports}catch(u){throw (r=0, u)}};};var c=y(function(F,g){
-var t=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),v=require('@stdlib/assert-is-number/dist').isPrimitive,o=require('@stdlib/math-base-assert-is-nan/dist'),s=require('@stdlib/symbol-iterator/dist'),E=require('@stdlib/math-base-special-ceil/dist'),m=require('@stdlib/error-tools-fmtprodmsg/dist'),T=1;function d(e,r,u){var n,i,l,f,a;if(!v(e)||o(e))throw new TypeError(m('0P749',e));if(!v(r)||o(r))throw new TypeError(m('0P74A',r));if(arguments.length>2){if(!v(u)||o(u))throw new TypeError(m('0P74B',u));i=u}else i=T;return f=E((r-e)/i),a=-1,n={},t(n,"next",b),t(n,"return",q),s&&t(n,s,h),n;function b(){return a+=1,l||a>=f?{done:!0}:{value:e+a*i,done:!1}}function q(w){return l=!0,arguments.length?{value:w,done:!0}:{done:!0}}function h(){return d(e,r,i)}}g.exports=d
-});var x=c();module.exports=x;
-/** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
